@@ -1,6 +1,6 @@
 # Git Deploy ELB
 
-**NOTE:** This library is to be used with PHP AWS SDK version 1. The last version is 1.6.2
+**NOTE:** This library is to be used with PHP AWS SDK version 1. The last version is 1.6.2. It does not support PHP AWS SDK version 2. 
 
 I created this library to help update the codes in instances under a specific Elastic Load Balancer in AWS. While you can easily create a hook in your Git repo (GitHub or GitLab), the problem starts when you are using Auto-Scaling. With Auto-Scaling, you don't know that IP addresses of your instances.
 
