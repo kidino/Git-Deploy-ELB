@@ -78,7 +78,7 @@ class ELBTrigger {
      * Get IP addresses of instances
      *
      * @param  array    $load_balancer_names The ELB names in array
-     * @return Status   false or an array of instance IDs
+     * @return bool     false or an array of instance IDs
      */     
     function get_ip_addresses( $instance_ids = array() ) {
         $ec2 = new AmazonEC2();
