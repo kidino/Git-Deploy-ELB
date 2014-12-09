@@ -1,5 +1,7 @@
 <?php
 
+include('elbtrigger.php');
+
 // get data from Gitlab hook
 $push_data = json_decode( file_get_contents('php://input') );
 
