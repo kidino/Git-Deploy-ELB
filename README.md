@@ -2,6 +2,10 @@
 
 **NOTE:** This library is to be used with PHP AWS SDK version 1. The last version is 1.6.2. It does not support PHP AWS SDK version 2. 
 
+You may also want to create your AMI for the auto-scaling to have some sort of script to trigger on launch or reboot. On Ubuntu, you can use /etc/rc.local or @reboot in crontab. You can use the script to do initial 'git pull [your-branch]' for the project so that the app is always up to date.
+
+## About
+
 I created this library to help update the codes in instances under a specific Elastic Load Balancer in AWS. While you can easily create a hook in your Git repo (GitHub or GitLab), the problem starts when you are using Auto-Scaling. With Auto-Scaling, you don't know that IP addresses of your instances.
 
 This this library, what you can do is create a hook to trigger a script in a dedicated machine. And then, have that script trigger a script in the instances. 
