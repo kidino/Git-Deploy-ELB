@@ -8,7 +8,7 @@ You may also want to create your AMI for the auto-scaling to have some sort of s
 
 I created this library to help update the codes in instances under a specific Elastic Load Balancer in AWS. While you can easily create a hook in your Git repo (GitHub or GitLab), the problem starts when you are using Auto-Scaling. With Auto-Scaling, you don't know that IP addresses of your instances.
 
-This this library, what you can do is create a hook to trigger a script in a dedicated machine. And then, have that script trigger a script in the instances. 
+With this library, what you can do is create a hook to trigger a script in a dedicated machine. And then, have that script trigger a script in the instances. 
 
 To use this, your instances must have public IP addresses.
 
