@@ -22,6 +22,6 @@ Make sure you have created and update config.inc.php with your AWS credentials t
 
 The sample-hook.php shows how you can use the library. This is the script that you use in your Hook in Github or Gitlab. In the example in the code, sample-hook.php is accessed with a URL like http://domain.com/sample-hook.php?key=my-secret-key
 
-The sample-instance-trigger.php is a sample script that you use to execute 'git pull' in the EC2 instance. Since this is going to be triggered via IP address, I put this in the default virtual host, which is normally in /var/www/html (in Apache 2.4). You also need to make sure that you have a user created for your machine or use the Deploy Key set up.
+The sample-instance-trigger.php is a sample script that you use to execute 'git pull' in the EC2 instance. Since this is going to be triggered via IP address, I put this in the default virtual host, which is normally in /var/www/html (in Apache 2.4). You also need to make sure that you have a user created for your machine in your Git project or use the Deploy Key set up.
 
 All the best!
