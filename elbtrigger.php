@@ -115,7 +115,7 @@ class ELBTrigger {
      */     
     function trigger_pull_script($ipaddr = array(), $script_uri = '/' /* with beginning slash */ ) {
         
-        $trigger_reponse = array();
+        $trigger_response = array();
         
         foreach( $ipaddr as $ip ) {
             $resp = file_get_contents( 'http://'.$ip.$script_uri );

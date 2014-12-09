@@ -9,6 +9,7 @@ include('elbtrigger.php');
 $push_data = json_decode( file_get_contents('php://input') );
 
 // create log file
+// you can create your own file naming, based on time, branch, etc...
 $logfile = 'hook.log';
 file_put_contents($logfile, "POST:\n".print_r($_POST,true));
 file_put_contents($logfile, "\nGET:\n".print_r($_GET, true),FILE_APPEND);
@@ -43,5 +44,6 @@ if ($_GET['key'] == 'my-secret-key') {
 }
 
 // dumping to screen for debugging
+// remove if done -- don't want to show this to the world, would you?
 echo file_get_contents($logfile);
 
