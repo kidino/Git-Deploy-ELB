@@ -16,6 +16,8 @@ file_put_contents($logfile, "\nSERVER:\n".print_r($_SERVER, true), FILE_APPEND);
 file_put_contents($logfile, "\nJSON POST:\n".print_r( $push_data, true), FILE_APPEND);
 
 // some secret key
+// you can also verify data by checking 
+// $_SERVER['REMOTE_ADDR'] is an approved IP address
 if ($_GET['key'] == 'my-secret-key') {
     // identifying the branch that was pushed
     // in this case -- only when branch 'production' was pushed
