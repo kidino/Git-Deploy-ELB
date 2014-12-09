@@ -1,5 +1,8 @@
 <?php
 
+// In the example in the code, sample-hook.php is accessed with a URL like
+// http://domain.com/sample-hook.php?key=my-secret-key
+
 include('elbtrigger.php');
 
 // get data from Gitlab hook
