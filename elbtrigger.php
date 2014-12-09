@@ -45,7 +45,7 @@ class ELBTrigger {
      * Get the instances under a specific ELB
      *
      * @param  array    $load_balancer_names The ELB names in array
-     * @return Status   false or an array of instance IDs
+     * @return bool     false or an array of instance IDs
      */     
     function get_instances( $load_balancer_names = array() ) {
     
