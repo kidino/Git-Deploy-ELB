@@ -52,8 +52,6 @@ class ELBTrigger {
         $elb = new AmazonELB();
         $elb->set_region(constant('AmazonELB::'.$this->region));
         $elb_info = $elb->describe_load_balancers( array( 'LoadBalancerNames' => $load_balancer_names ) );
-
-        print_r($elb_info);
         
         if ($elb_info->isOK()) {
 
